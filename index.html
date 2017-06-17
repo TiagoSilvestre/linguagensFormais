@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Linguagens Formais</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<style>
+			.cont{
+				display: flex;
+			}
+			input{
+				width: 50px;
+				display: block;
+			}
+			.input_container input{
+				display: inline;
+			}
+			.producoes_container div input{
+				display: inline;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<h2></h2>
+		<button onclick="adicionaLinha()">Adicionar Linha</button><br><br>
+		<!--
+		<table border="1" cellspacing="0" id="tabela">
+			<thead>
+				<tr>
+					<th>Simbolo</th>
+					<th>Produções</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<br><br>
+		<button onclick="executaFita()">Executar</button>
+		-->
+
+		<div class="container cont">
+			<div class="simbolo_container">
+				<h2>Simbolo</h2>
+				<input type="text">
+				<input type="text">
+			</div>
+			<div class="producoes_container">
+				<h2>Produções</h2>
+				<div class="input_container">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+					<button>+</button>
+				</div>
+				<div class="input_container">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+					<button>+</button>
+				</div>
+				
+			</div>
+		</div>
+
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
+
